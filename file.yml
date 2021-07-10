@@ -1,0 +1,9 @@
+---
+- hosts: web
+  become: yes
+  tasks:
+    - name: create file
+      file:
+        mode: 600
+        state: directory
+        path: "/opt/devops/terraf"
